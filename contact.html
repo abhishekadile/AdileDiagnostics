@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta and Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Adile Diagnostics</title>
+    <!-- Google Font (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to main CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Floating Navigation Bar -->
+
+    <!-- Navbar Section (same as other pages) -->
     <header class="navbar">
         <div class="container">
             <nav>
@@ -15,31 +20,31 @@
                 <a href="features.html">Features</a>
                 <a href="testimonials.html">Testimonials</a>
                 <a href="pricing.html">Pricing</a>
+                <a href="products.html">Products</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Contact Form Section -->
+    <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
             <h2 class="section-title">Let’s Get in Touch</h2>
-            <form action="contact.php" method="POST">
-                <div class="contact-box">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="cta-button">Submit</button>
-                </div>
+            <form class="contact-box">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Adile Diagnostics. All Rights Reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
