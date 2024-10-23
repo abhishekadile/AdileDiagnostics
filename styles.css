@@ -1,0 +1,237 @@
+/* Global Styles - Applies to all pages */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;  /* Ensuring Montserrat is applied globally */
+    background-color: #f5f7fa;  /* Light background for professional appearance */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;  /* Helps with sticky footer */
+}
+
+/* Main container for all page content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;  /* Makes content take up available space */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Floating effect */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Centering navbar items */
+.navbar .container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling navbar links */
+.navbar nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Ensuring Montserrat font is used for navigation links */
+.navbar nav a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;  /* Apply Montserrat font */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+.navbar nav a:hover {
+    color: #00bcd4;
+}
+
+/* Hero section styling (applies to index page) */
+.hero-section {
+    background: url('assets/medical-bg.jpg') center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+/* Styling for main title on hero section */
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+/* Subtitle styling on hero section */
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* CTA (Call-to-Action) button on hero section */
+.cta-button {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for CTA button */
+.cta-button:hover {
+    background-color: #008c9e;
+    transform: scale(1.05);
+}
+
+/* Feature boxes for Features, Testimonials, Pricing, and Products pages */
+.features-section, .testimonials-section, .pricing-section, .products-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f5f7fa;
+}
+
+/* Box styling for Features, Testimonials, Pricing, and Products */
+.feature-box, .testimonial-box, .pricing-box, .product-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);  /* Slight shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+/* Hover effect for all feature boxes */
+.feature-box:hover, .testimonial-box:hover, .pricing-box:hover, .product-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title inside the boxes */
+.feature-box h3, .testimonial-box h3, .pricing-box h3, .product-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
+
+/* Text inside the boxes */
+.feature-box p, .testimonial-box p, .pricing-box p, .product-box p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Contact Form Section */
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f5f7fa;
+}
+
+/* Contact form box styling */
+.contact-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 60%;  /* Centered width */
+    max-width: 600px;
+}
+
+/* Inputs and textarea inside contact form */
+.contact-box input, .contact-box textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+}
+
+/* Submit button styling */
+button {
+    background-color: #00bcd4;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #008c9e;
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: auto;  /* Ensures footer sticks to the bottom */
+}
+
+/* Footer text */
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Stacks navbar links vertically on smaller screens */
+    .navbar {
+        flex-direction: column;
+    }
+
+    /* Smaller font for hero section title on small screens */
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    /* Smaller button padding on mobile */
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    /* Full width for boxes on smaller screens */
+    .feature-box, .testimonial-box, .pricing-box, .contact-box, .product-box {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    /* Full width for contact box on mobile */
+    .contact-box {
+        width: 90%;
+    }
+}
