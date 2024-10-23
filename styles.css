@@ -235,3 +235,13 @@ button:hover {
         width: 90%;
     }
 }
+
+
+/* Navbar links */
+.navbar nav a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;  /* Consistent Montserrat font */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
