@@ -86,6 +86,35 @@ html, body {
     transform: translateY(-2px);
 }
 
+/* BetaMN Announcement */
+.beta-announcement {
+    margin-left: 2rem;
+}
+
+.beta-badge {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-block;
+    animation: pulse 2s infinite;
+    white-space: nowrap;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Hero Section */
 .hero-section {
     padding: 8rem 0 4rem;
